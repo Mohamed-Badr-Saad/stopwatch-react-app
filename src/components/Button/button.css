@@ -1,0 +1,14 @@
+.btn{
+    background-color: gainsboro;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 5px;
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background-color: rgb(127, 117, 117);
+
+}
