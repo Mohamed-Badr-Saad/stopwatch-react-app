@@ -3,6 +3,7 @@ import Button from './components/Button/button';
 import Minutes from './components/minute/minute';
 import { useState } from 'react';
 import Seconds from './components/second/second';
+import { SpeedInsights } from '@vercel/speed-insights/next';  //to make some performance tests using vercel
 
 function App() {
   const increaseMinutes = () => {
@@ -29,8 +30,9 @@ function App() {
 
 
         {minutes === 0 ? null : <Seconds minutes={minutes} setMinutesHandler={setMinutes}></Seconds>}
-
       </header>
+
+      <SpeedInsights />
     </div>
   );
 }
